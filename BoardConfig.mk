@@ -109,7 +109,10 @@ TARGET_KERNEL_SOURCE := kernel/motorola/msm8998
 # Lights
 TARGET_PROVIDES_LIBLIGHT := true
 
+# Properties
 TARGET_PRODUCT_PROP += $(DEVICE_PATH)/product.prop
+TARGET_SYSTEM_PROP += $(DEVICE_PATH)/system.prop
+
 
 # LMKD
 TARGET_LMKD_STATS_LOG := true
