@@ -17,6 +17,10 @@
 # Properties
 -include $(LOCAL_PATH)/properties.mk
 
+# Board declaration
+PRODUCT_BOARD_PLATFORM := msm8998
+PRODUCT_USES_QCOM_HARDWARE := true
+
 # Overlays
 DEVICE_PACKAGE_OVERLAYS += $(LOCAL_PATH)/overlay
 PRODUCT_ENFORCE_RRO_TARGETS := *
@@ -180,7 +184,7 @@ PRODUCT_COPY_FILES += \
 
 # Health
 PRODUCT_PACKAGES += \
-    android.hardware.health@2.1-impl-qti
+    android.hardware.health@2.1-impl-qti \
     android.hardware.health@2.0-service.nash
 
 # HIDL
